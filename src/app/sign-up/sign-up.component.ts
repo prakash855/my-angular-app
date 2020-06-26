@@ -15,6 +15,7 @@ export class SignUpComponent implements OnInit {
   ngOnInit() {
     this.resetForm();
   }
+  print = (x) => console.log(x);
   resetForm(form?: NgForm) {
     if (form != null) form.reset();
     this.user = {
